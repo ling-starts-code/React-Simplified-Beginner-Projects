@@ -10,7 +10,7 @@ export function Child() {
 
   useEffect(() => {
     console.log("Hi");
-    // every time our component unmount, it calls this return function
+    // every time our component unmount AKA being removed, it calls this return function
     // this return calls every time useEffect rerun
     // this useEffect will never run twice which means this return never gets called on re-renders
     // but it's always get called on unmount
