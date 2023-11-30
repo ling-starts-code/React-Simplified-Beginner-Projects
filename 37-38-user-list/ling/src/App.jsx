@@ -29,7 +29,7 @@ const LoadingText = () => {
           <h1>User List</h1>
           <ul>
             {users.map((user) => (
-              <User key={user.id} name={user.name} />
+              <User key={user.id} {...user} />
             ))}
           </ul>
         </>
