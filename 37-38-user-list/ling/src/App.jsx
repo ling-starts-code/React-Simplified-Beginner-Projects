@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { User } from "./User.jsx";
 
 const LoadingText = () => {
   const [users, setUsers] = useState([]);
@@ -28,7 +29,7 @@ const LoadingText = () => {
           <h1>User List</h1>
           <ul>
             {users.map((user) => (
-              <li key={user.id}>{user.name}</li>
+              <User key={user.id} name={user.name} />
             ))}
           </ul>
         </>
